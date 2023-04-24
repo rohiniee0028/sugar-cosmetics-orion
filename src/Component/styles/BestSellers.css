@@ -1,0 +1,117 @@
+#product-carousel {
+    position: relative;
+    overflow: hidden;
+    padding: 26px;
+}
+
+#product-container {
+    height: 450px;
+    width: 98%;
+    text-align: center;
+    padding: 0 10px;
+    display: flex;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+#pre-btn,
+#next-btn {
+    border: none;
+    width: 60px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#next-btn {
+    right: 0;
+}
+
+#next-btn p,
+#pre-btn p {
+    font-size: 50px;
+    background-color: rgba(255, 255, 255, 0.11);
+    box-shadow: 0px 0px 10px 1px black;
+    border-radius: 50%;
+    color: rgb(0, 0, 0);
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.mychild {
+    margin: 10px;
+    flex: 0 0 auto;
+    width: 19%;
+    margin-right: 40px;
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
+    border-radius: 10px;
+    margin-top: 60px;
+}
+
+.mychild img{
+    height: 250px;
+    width: 71%;
+}
+
+.mychild>img+p {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.mychild>img+p+p {
+    font-size: 14px;
+}
+
+.mychild>button {
+    width: 100%;
+    background-color: #212529;
+    color: #ffffff;
+    font-size: 13px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+
+@media all and (min-width:100px) and (max-width:640px) {
+    
+.mychild {
+    margin: 10px;
+    flex: 0 0 auto;
+    width: 45%;
+    margin-right: 40px;
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
+    border-radius: 10px;
+    margin-top: 60px;
+}
+
+.mychild img{
+    height: 200px;
+    width: 85%;
+}
+  
+}
+
+
+@media all and (min-width:641px) and (max-width:1024px) {
+    
+    .mychild {
+        margin: 10px;
+        flex: 0 0 auto;
+        width: 45%;
+        margin-right: 40px;
+        /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
+        border-radius: 10px;
+        margin-top: 60px;
+    }
+    
+    .mychild img{
+        height: 250px;
+        width: 85%;
+    }
+      
+    }
