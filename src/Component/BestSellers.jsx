@@ -1,5 +1,7 @@
 import React, { useEffect, useLayoutEffect, useRef, useState } from 'react'
 import './styles/BestSellers.css'
+import { Button } from './Button';
+import { ImageTag } from './ImageTag';
 
 const data = [
     {
@@ -147,11 +149,10 @@ export default function BestSellers() {
                         {
                             data.map((el) => (
                                 <div className="mychild" key={el.id}>
-                                    <img
-                                        src={el.img} alt={`image+${el.id}`} />,
+                                    <ImageTag url={el.img}/>
                                     <p>{el.title}</p>
                                     <p>{el.price}</p>
-                                    <button>{el.btn}</button>
+                                    <Button text={el.btn}/>
                                 </div>
                             ))
                         }

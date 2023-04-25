@@ -215,17 +215,28 @@ body {
     padding: 10px;
     font-size: 16px;
 }
+.flex-hamburger{
+    display: none;
+}
 
 
 
 @media all and (min-width:100px) and (max-width:640px) {
     #bb-link {
-        width: 80%;
+        width: 70%;
         display: flex;
-        justify-content: center;
         font-size: 18px;
         text-decoration: none;
         color: white;
+    }
+    .flex-hamburger{
+        display: block;
+    }
+    .top-link {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #212529;
     }
 
     .Navbar {
@@ -283,7 +294,7 @@ body {
         align-items: center;
         border-top-right-radius: 30px;
         border-bottom-right-radius: 30px;
-        width: 126px;
+        width: 106px;
         height: 40px;
         background-color: #212529;
     }
@@ -294,13 +305,21 @@ body {
 
     .grid-div {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         gap: "20px"
     }
 
     .grid-div div>select {
         margin-top: 10px;
-        width: 180px;
+        width: 120px;
+        background-color: transparent;
+        color: white;
+    }
+    .grid-div div>select>option{
+        background-color: #212529;
+    }
+    #fontimg{
+        display: none;
     }
 
 }

@@ -1,3 +1,5 @@
+import { Button } from "./Button";
+import { ImageTag } from "./ImageTag";
 import "./styles/Footer.css";
 
 export const Footer = () => {
@@ -8,26 +10,25 @@ export const Footer = () => {
                     <img src="https://in.sugarcosmetics.com/Footer_sugar_icon.png" />
                 </div>
                 <div id="social-icons">
-                    <i href="https://www.facebook.com/"><img
-                        src="https://in.sugarcosmetics.com/desc-images/facebook.svg" /></i>
-                    <i href="https://mail.google.com"><img
-                        src="https://www.seekpng.com/png/small/983-9831667_012-329-email-icon.png" /></i>
-                    <i href="https://www.instagram.com/accounts/login/"><img
-                        src="https://in.sugarcosmetics.com/desc-images/Instagram.svg" /></i>
-                    <i href="https://in.pinterest.com/login/"><img
-                        src="https://in.sugarcosmetics.com/desc-images/Pinterest.svg" /></i>
-                    <i href="https://www.tumblr.com/tagged/login?sort=top"><img
-                        src="https://in.sugarcosmetics.com/desc-images/Tumblr.svg" /></i>
-                    <i href="https://www.youtube.com/"><img src="https://in.sugarcosmetics.com/desc-images/Youtube.svg" /></i>
-                    <i href="https://twitter.com/i/flow/login"><img
-                        src="https://cdn-icons-png.flaticon.com/512/107/107195.png" /></i>
+                    <i href="https://www.facebook.com/"><ImageTag url={"https://in.sugarcosmetics.com/desc-images/facebook.svg"}/></i>
+                    <i href="https://mail.google.com"><ImageTag
+                        url={"https://www.seekpng.com/png/small/983-9831667_012-329-email-icon.png"} /></i>
+                    <i href="https://www.instagram.com/accounts/login/"><ImageTag
+                        url={"https://in.sugarcosmetics.com/desc-images/Instagram.svg"} /></i>
+                    <i href="https://in.pinterest.com/login/"><ImageTag
+                        url={"https://in.sugarcosmetics.com/desc-images/Pinterest.svg"} /></i>
+                    <i href="https://www.tumblr.com/tagged/login?sort=top"><ImageTag
+                        url={"https://in.sugarcosmetics.com/desc-images/Tumblr.svg"} /></i>
+                    <i href="https://www.youtube.com/"><ImageTag url={"https://in.sugarcosmetics.com/desc-images/Youtube.svg"} /></i>
+                    <i href="https://twitter.com/i/flow/login"><ImageTag
+                        url={"https://cdn-icons-png.flaticon.com/512/107/107195.png"} /></i>
                 </div>
                 <div className="middle-div">
                     <div className="middle-div-half">
                         <h4 className="h4-div">SUBSCRIBE TO OUR NEWSLETTER</h4>
                         <div id="email-div">
                             <input type="email" placeholder="Your email address" />
-                            <button>SIGN UP</button>
+                            <Button text={"signup"}/>
                         </div>
                     </div>
                     <div className="middle-div-half">
@@ -55,7 +56,7 @@ export const Footer = () => {
                         <div>
                             <div id="call-us">
                                 <img src="https://in.sugarcosmetics.com/desc-images/phone_android_white.svg" />
-                                <div>Call us at</div>
+                                <div >Call us at</div>
                             </div>
                             <a href="#">1800-209-9933</a>
                             <div style={{color:"#999999", fontSize:"12px"}}>Monday to Friday : 9 AM to 7 PM </div>

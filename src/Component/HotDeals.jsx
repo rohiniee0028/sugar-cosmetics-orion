@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import './styles/HotDeals.css'
+import { ImageTag } from './ImageTag';
 const images = [
     {
         id: 1,
@@ -58,7 +59,7 @@ const HotDeals = () => {
                 {
                     images.map((el) => (
                         <div className='mycard' key={el.id}>
-                            <img src={el.img} alt={`image+${el.id}`} width={"100%"} />
+                            <ImageTag url={el.img} width={"100%"}/>
                         </div>
                     ))
                 }

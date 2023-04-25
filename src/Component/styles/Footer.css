@@ -70,6 +70,7 @@
 #app-div{
     display: flex;
     gap:15px;
+    margin-top: 15px
 }
 #app-div>div{
     color:#999999;
@@ -93,6 +94,8 @@
 }
 .information-div{
     text-align:left;
+    margin-top: 10px;
+    line-height: 2;
 }
 
 #sub-info{
@@ -100,6 +103,7 @@
     display:flex;
     justify-content: space-between;
     font-size: 16px;
+    line-height: 1.5;
 }
 #sub-info>a:hover{
     color:#ffffff;
@@ -113,6 +117,7 @@
     display:flex;
     flex-direction: column;
     gap:5px;
+    line-height: 2;
 }
 #sub-get-div>div>a{
     text-decoration: none;
@@ -125,6 +130,7 @@
 #call-us{
     display:flex;
     gap:5px;
+    align-items: center;
 }
 #call-us>img{
     width:22px;
@@ -144,12 +150,24 @@
         flex-direction: column;
         gap:30px;
         justify-content: center;
+        margin-top: 20px;
     } 
+    #sub-get-div>div{
+        display:flex;
+        flex-direction: column;
+        gap:5px;
+        line-height: 1.5;
+    }
+    .information-div{
+        text-align:left;
+        margin-top: 25px;
+    }
     #sub-get-div{
         display:flex;
         flex-direction: column;
         gap:20px;
         justify-content: space-between;
+        line-height: 1.5;
     }
     #sub-info{
         width:100%;
@@ -157,12 +175,23 @@
         flex-direction: column;
         justify-content: space-between;
         font-size: 16px;
+        line-height: 1.5;
     }
     .middle-div-half{
         width:98%;
+        line-height: 1.5;
     }
     #email-div>button{
         width:150px; 
+    }
+    #call-us{
+        display:flex;
+        gap:5px;
+        align-items: center;
+        margin-top: 5px;
+    }
+    #sub-info{
+        line-height: 2;
     }
   
 }
@@ -170,11 +199,29 @@
     .sub-footer{
         width:95%;
     }
+    #sub-info{
+        line-height: 2;
+    }
+    #sub-get-div>div{
+        display:flex;
+        flex-direction: column;
+        gap:5px;
+        line-height: 1.5;
+    }
     .middle-div{
         display:flex;
         flex-direction: column;
         gap:30px;
     } 
+    .information-div{
+        text-align:left;
+    }
+    #call-us{
+        display:flex;
+        gap:5px;
+        align-items: center;
+        margin-top: 10px;
+    }
     #sub-get-div{
         display:flex;
         flex-direction: column;
